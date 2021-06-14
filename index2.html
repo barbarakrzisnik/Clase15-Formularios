@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <main>
+        <form action="./contacto" method="POST">
+        <p>
+            <label for="producto">Título de producto</label>
+            <input type="text" name="titulo_producto" id="producto">
+        </p>
+        <label for="marcars">Marcas</label>
+        <select name="marcas" id="marcas">
+            <option>Klater</option>
+            <option>Top Mega</option>
+            <option>Fierce</option>
+            <option>Shimano</option>
+            <option>Lamborghini</option>
+            <option>Aurora</option>
+            <option>GT</option>
+        </select>
+        <p>
+            <label for="rodado">Rodado</label>
+            <input type="number" name="numero_rodado" id="rodado">
+        </p>
+        <p>
+            Categoria de producto
+        </p>
+        <p>
+            <label for="mountain_bike">
+                <input type="radio" name='categoria' id="mountain_bike" value="mountain">
+                Mountain bike
+            </label>
+            <label for="paseo_bike">
+                <input type="radio" name='categoria' id="paseo_bike" value="paseo">
+                Paseo
+            </label>
+            <label for="plegable_bike">
+                <input type="radio" name='categoria' id="plegable_bike" value="plegable">
+                Plegable
+            </label>
+            <label for="carrera_bike">
+                <input type="radio" name='categoria' id="carrera_bike" value="carrera">
+                Carrera
+            </label>
+        </p>
+        <p>
+            Descripción de producto
+        </p>
+        <textarea placeholder="Describe" rows="10" cols="30">
+        </textarea>
+        <p>
+            <input type="submit" name="formulario_producto" value="Cargar">
+        </p>
+        </form>
+    </main>
+</body>
+</html>
+
+
+<!--
+DUDA: Donde va el value en el select???
+-->

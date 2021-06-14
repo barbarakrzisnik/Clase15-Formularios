@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style3.css" rel="stylesheet">
+    <title>Pago</title>
+</head>
+<body>
+    <h2>Formulario de pago</h2>
+    <form action="./tarjeta" method="POST">
+        <p>
+            <label for="numero_tarjeta">Número de tarjeta de crédito</label>
+            <input type="text" maxlength="16" name="numerotarjeta" id="numero_tarjeta">
+        </p>
+        <p>
+            <label for="nombre_titular">Nombre completo del titular</label>
+            <input type="text" name="nombretitular" id="nombre_titular">
+        </p>
+        <p> Vencimiento </p>
+        <p>
+            <label for="vencimiento_mes">Mes
+                <select name="meses" id="vencimiento_mes">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <label for="año_vencimiento">Año</label>
+                <input type="number" name="año" id="año_vencimiento"
+                max="2031" min="2021">
+            </label>  
+        </p>
+        <p>
+            <label for="ccv">Código de seguridad</label>
+            <input type="password" name="codigo" id="ccv" maxlength="3">
+        </p>
+        <input type="submit" name="pago" value="Pagar">
+    </form>
+</body>
+</html>

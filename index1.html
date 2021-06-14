@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index1.css" rel="stylesheet">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="/contacto" method="POST">
+        <p>
+            <label for="identificacion_nombre">Nombre</label>
+            <input type="text" name="nombre" id="identificacion_nombre"
+            placeholder="Barbara">
+        </p>
+        <p>
+            <label for="identificacion_apellido">Apellido</label>
+            <input type="text" name="apellido" id="identificacion_apellido"
+            placeholder="Krzisnik">
+        </p>
+        <p>
+            <label for="identificacion_dni">DNI</label>
+            <input type="numbers" name="dni" id="identificacion_dni"
+            placeholder="DNI" maxlength="8">
+        </p>
+        <p>
+            <label for="identificacion_email">Email</label>
+            <input type="email" name="email" id="identificacion_email"
+            placeholder="barbarakrzisnik3@gmail.com">
+        </p>
+        <p>
+            <label for="identificacion_contrasena">Contraseña</label>
+            <input type="password" name="contrasena" id="identificacion_contrasena"
+            placeholder=Contraseña minlength="8" maxlength="16">
+        </p>
+
+        <p>
+            <label for="identificacion_terminos">Acepto los terminos y condiciones</label>
+            <input type="checkbox" name="terminos" id="identificacion_terminos"
+            value="terminos_condiciones">
+        </p>
+
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+</body>
+</html>
